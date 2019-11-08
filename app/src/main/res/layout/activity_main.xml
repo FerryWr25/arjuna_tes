@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="20dp"
+        android:layout_toRightOf="@+id/cancel"
+        android:layout_below="@+id/password"
+        android:id="@+id/login"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#00ff00"
+        android:text="Login"
+         />
+
+    <Button
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="75dp"
+        android:layout_below="@+id/password"
+        android:id="@+id/cancel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="#ff0000"
+        android:text="@android:string/cancel" />
+
+    <EditText
+        android:id="@+id/username"
+        android:layout_width="274dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="193dp"
+        android:ems="10"
+        android:hint="username here.."
+        android:inputType="textPersonName"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="79dp" />
+
+    <EditText
+        android:id="@+id/password"
+        android:layout_width="272dp"
+        android:layout_height="51dp"
+        android:layout_marginTop="262dp"
+        android:ems="10"
+        android:hint="password here.."
+        android:inputType="textPassword"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="81dp" />
+
+</RelativeLayout>
